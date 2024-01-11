@@ -1,0 +1,42 @@
+
+/* CSS Document */
+
+body {
+	background-color: #e4f1d6;
+}#container {
+	position: fixed;
+	height: 600px;
+	/* width: 800px; */
+	width: 100%;
+	/* max-width: 1200px; */
+	background-image: url(images/background4.jpg);
+	margin-right: 5%;
+	margin-top: 2%;
+	margin-bottom: 0px;
+	margin-left: 5%;
+	border: 2px solid #000000;
+	/* border-radius: 1, 4; */
+}
+#navigation {
+	float: left;
+	width: 300px;
+}
+#navigation img {
+	margin-left: 45px;
+	margin-top: 45px;
+}
+#navigation li {
+	list-style-type: none;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 42px;
+	margin-left: 52px;
+}
+#navigation a {
+	text-decoration: none;
+	color: #003300;
+}
+#navigation a:hover {
+	text-decoration: none;
+	color: #959595;
+}
