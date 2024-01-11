@@ -1,0 +1,416 @@
+@charset "UTF-8";
+/* CSS Document */
+
+<style type="text/css">
+<link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+body {
+	background-color: #e4f1d6;
+}
+body {
+	background-color: #ffffff;
+}
+#container {
+	width: 800px;
+	position: relative;
+	margin-left: auto;
+	background-color: #ffffff;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: auto;
+	
+	height: 600px;
+	padding: 0px;
+}
+#logo {
+	margin-top: 45px;
+	margin-left: 45px;
+}
+#navigation {
+	float: left;
+	width: 300px;
+	height: 400px;
+}
+#navigation li {
+	list-style-type: none;
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 45px;
+	margin-left: 52px;
+}
+#navigation a {
+	text-decoration: none;
+	color: #003300;
+}
+#navigation a:hover {
+	text-decoration: none;
+	color: #959595;
+}
+#navigation img {
+	margin-top: 45px;
+	margin-left: 45px;
+}
+
+#navigation {
+	width: 300px;
+	float: left;
+}
+
+#image_gallery {
+	bottom: 0px;
+	visibility: visible;
+	height: 0px;
+}
+#P7ShowPL1 img {
+	border: solid 1px #000000;
+}
+#P7ShowPL2 img {
+	border: solid 1px #000000;
+}
+#P7ShowPL3 img {
+	border: solid 1px #000000;
+}
+#P7ShowPL4 img {
+	border: solid 1px #000000;
+}
+#P7ShowPL5 img {
+	border: solid 1px #000000;
+}
+#P7ShowPL6 img {
+	border: solid 1px #000000;
+}
+#P7ShowPL7 img {
+	border: solid 1px #000000;
+}
+#P7ShowPL7 img {
+	border: solid 1px #000000;
+}
+#P7ShowPL8 img {
+	border: solid 1px #000000;
+}
+#P7ShowPL9 img {
+	border: solid 1px #000000;
+}
+#P7ShowPL10 img {
+	border: solid 1px #000000;
+}
+#P7ShowPL11 img {
+	border: solid 1px #000000;
+}
+#P7ShowPL12 img {
+	border: solid 1px #000000;
+}
+
+
+
+/* profile page */
+
+#profile_info {
+	float: right;
+	width: 350px;
+	height: 455px;
+	overflow: auto;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-top: 78px;
+}
+#profile_info p {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	margin: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+#profile_info h1 {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #304E48;
+	margin: 0px;
+}	
+#profile_image img {
+	border: solid 1px #000000
+}
+#profile_info a {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #3366CC;
+	display: inline-block;
+}
+#profle_info a:hover {
+	font-size: 10px;
+	font-weight: bold;
+	color: #959595;
+}
+/* philosopy page */
+
+#philosophy_info {
+	float: right;
+	width: 350px;
+	height: 468px;
+	overflow: auto;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-top: 60px;
+}
+.tableHeadings {
+	font-size: 10px;
+	font-weight: bold;
+}
+#philosophy_info p{
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	margin: 0px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+#philosophy_info table {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	width: 320px;
+}
+#philosophy_info h1{
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #304E48;
+	margin: 0px;
+	padding: 0px;
+}
+#philosophy_info li {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 22px;
+}
+#philosophy_info a {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #3366CC;
+}
+#philosophy_info a:hover {
+	font-size: 10px;
+	font-weight: bold;
+	color: #959595;
+}
+#philosophy_info #ironwood {
+	float: left;
+	padding: 0px;
+	margin-top: 100px;
+}
+#philosophy_info #gallerywindow {
+	width: 90px;
+	float: right;
+	padding: 0px;
+	margin-top: -30px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+#philosophy_info h2 {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #304E48;
+}
+#philosophy_info a:hover {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #959595;
+	font-weight: bold;
+}
+#philosophy_image img {
+	border: solid 1px #000000
+}
+
+/* drawings page */
+
+#drawings_info p{
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 22px;
+}
+#drawings_info h1{
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #304E48;
+	margin-bottom: -10px;
+}
+
+/* services page */
+
+#services_info {
+	float: right;
+	width: 350px;
+	height: 455px;
+	overflow: auto;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-top: 78px;
+}
+#services_info a {
+	color: #3366cc;
+	text-decoration: none;
+	font-weight: bold;
+}
+#services_info a:hover {
+	color: #959595;
+}
+.alignlt {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	float: left;
+	margin-top: 0px;
+}
+.alignrt {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	float: right;
+	margin-top: 0px;
+}
+#services_info p{
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 16px;
+	margin: 0px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+#services_info h1{
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #304E48;
+	margin: 0px;
+	padding: 0px;
+}
+#services_image img {
+	border: solid 1px #000000
+}
+.alignleft {
+	float: left;
+	width: 175px;
+}
+.alignright {
+	float: left;
+	width: 160px;
+}
+#services_info #processFlowchart {
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Avenir, Verdana, Geneva, sans-serif;
+	height: 25px;
+}
+
+/* contact page */
+
+#contact_info {
+	float: right;
+	width: 350px;
+	height: 455px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	padding-top: 0px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-top: 78px;
+}
+#contact_info p{
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 22px;
+}
+#contact_info h1{
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #304E48;
+	margin-bottom: -10px;
+}
+#contact_image img {
+	border: solid 1px #000000
+}
+#left_images {
+	width: 350px;
+	padding: 0px;
+	float: left;
+	margin-top: 45px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 45px;
+}
+#left_images table {
+	margin-top: 20px;
+}
+p {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+html {
+	margin: 0px;
+	padding: 0px;
+}
+#image_nav img {
+	float: left;
+	margin-top: 30px;
+	margin-left: 90px;
+}
+#close_window {
+	width: 800px;
+	padding: 0px;
+	margin-top: 400px;
+	text-align: center;
+	clear: both;
+	float: left;	
+}
+.rtarrow {
+	margin-top: 519px;
+	float: right;
+	width: 62px;
+	font-size: 16px;
+}
+.rtarrow a {
+	text-decoration: none;
+	color: #000;
+}
+.ltarrow {
+	margin-top: 521px;
+	font-size: 16px;
+	padding-left: 54px;
+}
+.ltarrow a {
+	color: #000;
+	text-decoration: none;
+}
