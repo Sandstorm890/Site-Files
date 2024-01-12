@@ -415,3 +415,24 @@ html {
 	color: #000;
 	text-decoration: none;
 }
+
+#image_gallery_container {
+    position: absolute;
+    left: 241px;
+    top: 507px;
+    width: 450px; /* Set the desired width for the scrollable container */
+    height: 60px; /* Set the height according to your thumbnail size */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks to ensure horizontal layout */
+    z-index: 2;
+    border: none;
+}
+
+#image_gallery table {
+    display: inline-block; /* Ensure the table stays in a line */
+}
+
+#image_gallery img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
