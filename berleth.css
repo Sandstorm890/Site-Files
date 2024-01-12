@@ -1,8 +1,13 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Avenir');
 /* CSS Document */
 
-<style type="text/css">
-<link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+h1 {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #304E48;
+	margin: 0px;
+}	
 
 body {
 	background-color: #ffffff;
@@ -130,13 +135,8 @@ body {
 	padding-right: 0px;
 	padding-left: 0px;
 }
-#profile_info h1 {
-	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	font-weight: bold;
-	color: #304E48;
-	margin: 0px;
-}	
+
+
 #profile_image img {
 	border: solid 1px #000000
 }
@@ -189,14 +189,14 @@ body {
 	line-height: 16px;
 	width: 320px;
 }
-#philosophy_info h1{
+/* h1 {
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 10px;
 	font-weight: bold;
 	color: #304E48;
 	margin: 0px;
 	padding: 0px;
-}
+} */
 #philosophy_info li {
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 11px;
