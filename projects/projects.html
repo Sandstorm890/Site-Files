@@ -49,29 +49,67 @@ function P7_ShowPic(a,b) { //v2.0 by PVII
       <li><a href="../contact/contact.html">Contact</a></li>
     </ul>
   </div>
+  <button id="nextButton">&gt;</button>
   <!-- Thumbnails -->
   <div id="image_gallery_container">
+    <div id="image_gallery_wrapper">
       <table id="image_gallery" border="0" cellpadding="0" cellspacing="1">
-          <td><a href="images/4birchwoodland.jpg" onClick="P7_ShowPic('images/4birchwoodland.jpg','P7ShowPL4');return false"><img src="smimages/4birchwoodland.jpg" alt="Birch Woodland with Blueberry and Native Spirea, Vashon Island" width="50" height="35" border="0"></a></td>
-          <td><a href="images/5pathtobighouse.jpg" onClick="P7_ShowPic('images/5pathtobighouse.jpg','P7ShowPL5');return false"><img src="smimages/5pathtobighouse.jpg" alt="Circle Drive with Oak Tree, Stone Walls and Hedges, Woodinville" width="50" height="35" border="0"></a></td>
-          <td><a href="images/6lawnlake.jpg" onClick="P7_ShowPic('images/6lawnlake.jpg','P7ShowPL6');return false"><img src="smimages/6lawnlake.jpg" alt="Simple, Functional Lakeside Yard, Mercer Island" width="50" height="35" border="0"></a></td>
-          <td><a href="images/7pathfield" onClick="P7_ShowPic('images/7pathfield.jpg','P7ShowPL7');return false"><img src="smimages/7pathfield.jpg" alt="Garden Path to Lawn Area  and Linden Tree, Seattle" width="50" height="35" border="0"></a></td>
-          <td><a href="images/8modernhome.jpg" onClick="P7_ShowPic('images/8modernhome.jpg','P7ShowPL8');return false"><img src="smimages/8modernhome.jpg" alt="Minimalist landscape and entry walk in harmony with modern home, Vashon Island" width="50" height="35" border="0"></a></td>
-          <td><a href="images/9rusticgate.jpg" onClick="P7_ShowPic('images/9rusticgate.jpg','P7ShowPL9');return false"><img src="smimages/9rusticgate.jpg" alt="Rustic entry gate with evergreen hedges, Vashon Island" width="50" height="35" border="0"></a></td>
-          <td><a href="images/10waterfeature3andpath.jpg" onClick="P7_ShowPic('images/10waterfeature3andpath.jpg','P7ShowPL10');return false"><img src="smimages/10waterfeature3andpath.jpg" alt="Garden Path by Water Feature, Seattle" width="50" height="35" border="0"></a></td>
-          <td><a href="images/11stonewall.jpg" onClick="P7_ShowPic('images/11stonewall.jpg','P7ShowPL11');return false"><img src="smimages/11stonewall.jpg" alt="Stone Wall Made From Gathered Bluestone, Pennsylvania" width="50" height="35" border="0"></a></td>
-          <td><a href="images/12waterfeature4.jpg" onClick="P7_ShowPic('images/12waterfeature4.jpg','P7ShowPL12');return false"><img src="smimages/12waterfeature4.jpg" alt="Water Feature, Brick Wall and Garden, Redmond" width="50" height="35" border="0"></a></td>
-          <td><a href="images/13bluestoneentry.jpg" onClick="P7_ShowPic('images/13bluestoneentry.jpg','P7ShowPL1');return false"><img src="smimages/13bluestoneentry.jpg" alt="Bluestone entry walk and garden, Laurelhurst" width="50" height="35" border="0"></a></td>
-          <td><a href="images/14 quietplacetosit.jpg" onClick="P7_ShowPic('images/14 quietplacetosit.jpg','P7ShowPL2');return false"><img src="smimages/14 quietplacetosit.jpg" alt="A quiet, sunny place to sit in the garden, Laurelhurst" width="50" height="35" border="0"></a></td>
-          <td><a href="images/15relocatedgarage.jpg" onClick="P7_ShowPic('images/15relocatedgarage.jpg','P7ShowPL3');return false"><img src="smimages/15relocatedgarage.jpg" alt="Relocated garage allowed for defined lawn area, patio and entry pond, Windermere" width="50" height="35" border="0"></a></td>
-          <td><a href="images/16naturalisticlakeside.jpg" onClick="P7_ShowPic('images/16naturalisticlakeside.jpg','P7ShowPL4');return false"><img src="smimages/16naturalisticlakeside.jpg" alt="Naturalistic lakeside plantings for aesthetics and erosion control, Windermere" width="50" height="35" border="0"></a></td>
-          <td><a href="images/17understatedformalentry.jpg" onClick="P7_ShowPic('images/17understatedformalentry.jpg','P7ShowPL5');return false"><img src="smimages/17understatedformalentry.jpg" alt="Understated formal entry garden and driveway, Clyde Hill" width="50" height="35" border="0"></a></td>
-          <td><a href="images/18kitchenherbgarden.jpg" onClick="P7_ShowPic('images/18kitchenherbgarden.jpg','P7ShowPL6');return false"><img src="smimages/18kitchenherbgarden.jpg" alt="Kitchen herb garden, Clyde Hill" width="50" height="35" border="0"></a></td>
-          <td><a href="images/19moundedtopography.jpg" onClick="P7_ShowPic('images/19moundedtopography.jpg','P7ShowPL7');return false"><img src="smimages/19moundedtopography.jpg" alt="Mounded topography with masses of native plantings, Roslyn" width="50" height="35" border="0"></a></td>
-          <td><a href="images/20antiquechinesegranite.jpg" onClick="P7_ShowPic('images/20antiquechinesegranite.jpg','P7ShowPL8');return false"><img src="smimages/20antiquechinesegranite.jpg" alt="Antique Chinese granite slab paths through native planting beds, Roslyn" width="50" height="35" border="0"></a></td>
-          <td><a href="images/21brickwall.jpg" onClick="P7_ShowPic('images/21brickwall.jpg','P7ShowPL9');return false"><img src="smimages/21brickwall.jpg" alt="Brick wall, topped with bluestone slabs, define the patio area in a quiet backyard garden, Laurelhurst" width="50" height="35" border="0"></a></td>
+        <td><a href="images/4birchwoodland.jpg" onClick="P7_ShowPic('images/4birchwoodland.jpg','P7ShowPL4');return false"><img src="smimages/4birchwoodland.jpg" alt="Birch Woodland with Blueberry and Native Spirea, Vashon Island" width="50" height="35" border="0"></a></td>
+        <td><a href="images/5pathtobighouse.jpg" onClick="P7_ShowPic('images/5pathtobighouse.jpg','P7ShowPL5');return false"><img src="smimages/5pathtobighouse.jpg" alt="Circle Drive with Oak Tree, Stone Walls and Hedges, Woodinville" width="50" height="35" border="0"></a></td>
+        <td><a href="images/6lawnlake.jpg" onClick="P7_ShowPic('images/6lawnlake.jpg','P7ShowPL6');return false"><img src="smimages/6lawnlake.jpg" alt="Simple, Functional Lakeside Yard, Mercer Island" width="50" height="35" border="0"></a></td>
+        <td><a href="images/7pathfield" onClick="P7_ShowPic('images/7pathfield.jpg','P7ShowPL7');return false"><img src="smimages/7pathfield.jpg" alt="Garden Path to Lawn Area  and Linden Tree, Seattle" width="50" height="35" border="0"></a></td>
+        <td><a href="images/8modernhome.jpg" onClick="P7_ShowPic('images/8modernhome.jpg','P7ShowPL8');return false"><img src="smimages/8modernhome.jpg" alt="Minimalist landscape and entry walk in harmony with modern home, Vashon Island" width="50" height="35" border="0"></a></td>
+        <td><a href="images/9rusticgate.jpg" onClick="P7_ShowPic('images/9rusticgate.jpg','P7ShowPL9');return false"><img src="smimages/9rusticgate.jpg" alt="Rustic entry gate with evergreen hedges, Vashon Island" width="50" height="35" border="0"></a></td>
+        <td><a href="images/10waterfeature3andpath.jpg" onClick="P7_ShowPic('images/10waterfeature3andpath.jpg','P7ShowPL10');return false"><img src="smimages/10waterfeature3andpath.jpg" alt="Garden Path by Water Feature, Seattle" width="50" height="35" border="0"></a></td>
+        <td><a href="images/11stonewall.jpg" onClick="P7_ShowPic('images/11stonewall.jpg','P7ShowPL11');return false"><img src="smimages/11stonewall.jpg" alt="Stone Wall Made From Gathered Bluestone, Pennsylvania" width="50" height="35" border="0"></a></td>
+        <td><a href="images/12waterfeature4.jpg" onClick="P7_ShowPic('images/12waterfeature4.jpg','P7ShowPL12');return false"><img src="smimages/12waterfeature4.jpg" alt="Water Feature, Brick Wall and Garden, Redmond" width="50" height="35" border="0"></a></td>
+        <td><a href="images/13bluestoneentry.jpg" onClick="P7_ShowPic('images/13bluestoneentry.jpg','P7ShowPL1');return false"><img src="smimages/13bluestoneentry.jpg" alt="Bluestone entry walk and garden, Laurelhurst" width="50" height="35" border="0"></a></td>
+        <td><a href="images/14 quietplacetosit.jpg" onClick="P7_ShowPic('images/14 quietplacetosit.jpg','P7ShowPL2');return false"><img src="smimages/14 quietplacetosit.jpg" alt="A quiet, sunny place to sit in the garden, Laurelhurst" width="50" height="35" border="0"></a></td>
+        <td><a href="images/15relocatedgarage.jpg" onClick="P7_ShowPic('images/15relocatedgarage.jpg','P7ShowPL3');return false"><img src="smimages/15relocatedgarage.jpg" alt="Relocated garage allowed for defined lawn area, patio and entry pond, Windermere" width="50" height="35" border="0"></a></td>
+        <td><a href="images/16naturalisticlakeside.jpg" onClick="P7_ShowPic('images/16naturalisticlakeside.jpg','P7ShowPL4');return false"><img src="smimages/16naturalisticlakeside.jpg" alt="Naturalistic lakeside plantings for aesthetics and erosion control, Windermere" width="50" height="35" border="0"></a></td>
+        <td><a href="images/17understatedformalentry.jpg" onClick="P7_ShowPic('images/17understatedformalentry.jpg','P7ShowPL5');return false"><img src="smimages/17understatedformalentry.jpg" alt="Understated formal entry garden and driveway, Clyde Hill" width="50" height="35" border="0"></a></td>
+        <td><a href="images/18kitchenherbgarden.jpg" onClick="P7_ShowPic('images/18kitchenherbgarden.jpg','P7ShowPL6');return false"><img src="smimages/18kitchenherbgarden.jpg" alt="Kitchen herb garden, Clyde Hill" width="50" height="35" border="0"></a></td>
+        <td><a href="images/19moundedtopography.jpg" onClick="P7_ShowPic('images/19moundedtopography.jpg','P7ShowPL7');return false"><img src="smimages/19moundedtopography.jpg" alt="Mounded topography with masses of native plantings, Roslyn" width="50" height="35" border="0"></a></td>
+        <td><a href="images/20antiquechinesegranite.jpg" onClick="P7_ShowPic('images/20antiquechinesegranite.jpg','P7ShowPL8');return false"><img src="smimages/20antiquechinesegranite.jpg" alt="Antique Chinese granite slab paths through native planting beds, Roslyn" width="50" height="35" border="0"></a></td>
+        <td><a href="images/21brickwall.jpg" onClick="P7_ShowPic('images/21brickwall.jpg','P7ShowPL9');return false"><img src="smimages/21brickwall.jpg" alt="Brick wall, topped with bluestone slabs, define the patio area in a quiet backyard garden, Laurelhurst" width="50" height="35" border="0"></a></td>
       </table>
+    </div>
   </div>
+<button id="prevButton">&lt;</button>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const galleryWrapper = document.getElementById("image_gallery_wrapper");
+    const prevButton = document.getElementById("prevButton");
+    const nextButton = document.getElementById("nextButton");
+
+    let currentPage = 0;
+
+    function updateGalleryPosition() {
+        const newPosition = -currentPage * 460;
+        galleryWrapper.style.transform = `translateX(${newPosition}px)`;
+    }
+
+    prevButton.addEventListener("click", function () {
+        if (currentPage > 0) {
+            currentPage--;
+            updateGalleryPosition();
+        }
+    });
+
+    nextButton.addEventListener("click", function () {
+        const totalThumbnails = document.querySelectorAll("#image_gallery img").length;
+        const thumbnailsPerPage = 7;
+        const totalPages = Math.ceil(totalThumbnails / thumbnailsPerPage);
+
+        if (currentPage < totalPages - 1) {
+            currentPage++;
+            updateGalleryPosition();
+        }
+    });
+});  
+</script>
+
   <!-- ShowPic Layers -->
   <div id="P7ShowPL1" style="position:absolute; left:241px; top:118px; width:455; z-index:1; visibility:hidden">
     <p><img src="images/shim.gif" name="P7ShowPL1im" alt="Quiet Water Feature in Entry Courtyard, Maury Island" width="455" height="306"></p>

@@ -423,10 +423,16 @@ html {
     top: 500px;
     width: 460px; /* Set the desired width for the scrollable container */
     height: 50px; /* Set the height according to your thumbnail size */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent line breaks to ensure horizontal layout */
+    overflow: hidden; /* Hide overflowing content */
     z-index: 2;
     border: none;
+    text-align: center; /* Center buttons horizontally */
+}
+
+
+#image_gallery_wrapper {
+    display: flex; /* Use flexbox for easier layout */
+    transition: transform 0.5s ease; /* Add smooth transition effect for pagination */
 }
 
 #image_gallery table {
@@ -434,21 +440,31 @@ html {
 }
 
 #image_gallery img {
-    width: 60px; /* Set a fixed width for all thumbnails */
-    height: 30px; /* Set a fixed height for all thumbnails */
+    width: 65px; /* Set a fixed width for all thumbnails */
+    height: 22px; /* Set a fixed height for all thumbnails */
     object-fit: cover; /* Maintain aspect ratio and cover the entire container */
 }
 
-/* Style for Webkit browsers (Chrome, Safari) */
-#image_gallery_container::-webkit-scrollbar {
-    width: 8px; /* Specify the width of the scrollbar */
-	height: 6px;
+button {
+    width: 30px; /* Set button width */
+    height: 30px; /* Set button height */
+    background-color: #c14c4c00; /* Button background color */
+    color: #000000; /* Button text color */
+    border: none;
+    cursor: pointer;
 }
 
-#image_gallery_container::-webkit-scrollbar-thumb {
-    background-color: #316231; /* Color of the scrollbar thumb */
+#prevButton {
+    position: absolute;
+    left: 208px; /* Adjust the left position as needed */
+    top: 498px; /* Adjust the top position as needed */
+    cursor: pointer;
 }
 
-#image_gallery_container::-webkit-scrollbar-track {
-    background-color: #eee; /* Color of the scrollbar track */
+#nextButton {
+    position: absolute;
+    right: 65px; /* Adjust the right position as needed */
+    top: 498px; /* Adjust the top position as needed */
+    cursor: pointer;
 }
+
