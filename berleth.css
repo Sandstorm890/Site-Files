@@ -446,15 +446,35 @@ html {
 }
 
 #thumbnailBar img {
-	width: 60px;
-	height: 20px;
-	margin: 1px;
-	cursor: pointer;
+  width: 60px;
+  height: 20px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.arrowButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000000; /* Change color as desired */
+}
+
+#prevButton {
+	position: absolute;
+	left: 0; /* Push the Previous button to the left */
+	bottom: 0;
+}
+
+#nextButton {
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
 
 #captionLeft {
 	position: absolute;
-	text-align: right;
+	text-align: left;
 }
 
 #captionRight {

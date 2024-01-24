@@ -39,19 +39,53 @@
         "21brickwall.jpg"
       ];
 
-      imageList.forEach(image => {
-        const imgElement = document.createElement("img");
-        imgElement.src = `${imageDirectory}/${image}`;
-        imgElement.alt = image.replace(/\.[^/.]+$/, "");
-        imgElement.onclick = function () {
-          featuredImage.src = imgElement.src;
-        };
+      const thumbnailsPerPage = 7;
+      let currentPage = 0;
 
-        thumbnailBar.appendChild(imgElement);
-      });
+      function showThumbnails() {
+        const start = currentPage * thumbnailsPerPage;
+        const end = start + thumbnailsPerPage;
+
+        // Clear existing thumbnails
+        thumbnailBar.innerHTML = '';
+
+        // Display thumbnails for the current page
+        for (let i = start; i < end && i < imageList.length; i++) {
+          const imgElement = document.createElement("img");
+          imgElement.src = `${imageDirectory}/${imageList[i]}`;
+          imgElement.alt = imageList[i].replace(/\.[^/.]+$/, "");
+          imgElement.onclick = function () {
+            featuredImage.src = imgElement.src;
+          };
+
+          thumbnailBar.appendChild(imgElement);
+        }
+      }
+
+      // Set up initial thumbnails
+      showThumbnails();
 
       // Set the first image as the featured image
       featuredImage.src = `${imageDirectory}/${imageList[0]}`;
+
+      // Pagination buttons
+      const prevButton = document.getElementById("prevButton");
+      const nextButton = document.getElementById("nextButton");
+
+      prevButton.addEventListener("click", function () {
+        if (currentPage > 0) {
+          currentPage--;
+          showThumbnails();
+        }
+      });
+
+      nextButton.addEventListener("click", function () {
+        const totalPages = Math.ceil(imageList.length / thumbnailsPerPage);
+        if (currentPage < totalPages - 1) {
+          currentPage++;
+          showThumbnails();
+        }
+      });
     });
   </script>
 </head>
@@ -81,7 +115,13 @@
       </div>
 
       <!-- Thumbnail Bar -->
+      
+      
       <div id="thumbnailBar"></div>
+      
+      <button id="prevButton" class="arrowButton">&lt;</button>
+      <button id="nextButton" class="arrowButton">&gt;</button>
+
     </div>
   </div>
 </body>
