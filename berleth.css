@@ -10,29 +10,21 @@ h1 {
 	margin: 0px;
 }	
 
+
 body {
-	background-color: #ffffff;
+	display: flex;
+	justify-content: center; /* Center the content horizontally */
+	align-items: flex-start; /* Align content to the top */
 }
-body {
-	background-color: #ffffff;
-}
+
 #container {
-	width: 800px;
-	position: relative;
-	margin-left: auto;
-	background-color: #ffffff;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-right: auto;
-	
-	
-	height: 600px;
-	padding: 0px;
+	max-width: 1200px; /* Set a maximum width for the container */
+	margin: 0 auto; /* Center the container */
+	float: left; /* Use flexbox to create a horizontal layout */
+	align-items: center; /* Center items vertically within the container */
+	justify-content: space-between; /* Add space between navigation and gallery */
 }
-#logo {
-	margin-top: 45px;
-	margin-left: 45px;
-}
+
 #navigation {
 	float: left;
 	width: 300px;
@@ -42,7 +34,7 @@ body {
 	list-style-type: none;
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 11px;
-	line-height: 45px;
+	line-height: 55px;
 	margin-left: 8px;
 }
 #navigation a {
@@ -417,54 +409,54 @@ html {
 	text-decoration: none;
 }
 
-#image_gallery_container {
-    position: absolute;
-    left: 241px;
-    top: 500px;
-    width: 460px; /* Set the desired width for the scrollable container */
-    height: 50px; /* Set the height according to your thumbnail size */
-    overflow: hidden; /* Hide overflowing content */
-    z-index: 2;
-    border: none;
-    text-align: center; /* Center buttons horizontally */
+/* new stuff */
+
+#galleryContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	height: 350px;
+	width: 500px;
+	position: relative; /* Set gallery container to relative position */
 }
 
-
-#image_gallery_wrapper {
-    display: flex; /* Use flexbox for easier layout */
-    transition: transform 0.5s ease; /* Add smooth transition effect for pagination */
+#featuredImageContainer {
+	max-width: 500px;
+	height: 300px; /* Set a maximum height, adjust as needed */
+	border: 1px solid #333;
 }
 
-#image_gallery table {
-    display: inline-block; /* Ensure the table stays in a line */
+#featuredImage {
+	max-width: 500px;
+	height: 100%;
 }
 
-#image_gallery img {
-    width: 65px; /* Set a fixed width for all thumbnails */
-    height: 22px; /* Set a fixed height for all thumbnails */
-    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+#thumbnailBar {
+	display: flex;
+	max-width: 500px; /* Set the maximum width of the thumbnail bar */
+	max-height: 40px;
+	overflow-x: auto;
+	position: absolute; /* Set thumbnail bar to absolute position */
+	bottom: 0; /* Align the thumbnail bar to the bottom of the gallery container */
+	left: 50%; /* Center the thumbnail bar horizontally */
+	transform: translateX(-50%); /* Adjust to center the thumbnail bar */
+	background-color: #fff; /* Set a background color for visibility */
 }
 
-button {
-    width: 30px; /* Set button width */
-    height: 30px; /* Set button height */
-    background-color: #c14c4c00; /* Button background color */
-    color: #000000; /* Button text color */
-    border: none;
-    cursor: pointer;
+#thumbnailBar img {
+	width: 60px;
+	height: 20px;
+	margin: 1px;
+	cursor: pointer;
 }
 
-#prevButton {
-    position: absolute;
-    left: 208px; /* Adjust the left position as needed */
-    top: 498px; /* Adjust the top position as needed */
-    cursor: pointer;
+#captionLeft {
+	position: absolute;
+	text-align: right;
 }
 
-#nextButton {
-    position: absolute;
-    right: 65px; /* Adjust the right position as needed */
-    top: 498px; /* Adjust the top position as needed */
-    cursor: pointer;
+#captionRight {
 }
 
