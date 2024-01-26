@@ -435,30 +435,29 @@ html {
 
 #thumbnailBar {
 	display: flex;
-	max-width: 500px; /* Set the maximum width of the thumbnail bar */
-	max-height: 40px;
 	overflow-x: auto;
-	position: absolute; /* Set thumbnail bar to absolute position */
-	bottom: 0; /* Align the thumbnail bar to the bottom of the gallery container */
-	left: 50%; /* Center the thumbnail bar horizontally */
-	transform: translateX(-50%); /* Adjust to center the thumbnail bar */
-	background-color: #fff; /* Set a background color for visibility */
-}
+	position: absolute;
+	bottom: 0;
+	
+	transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
+  }
 
 #thumbnailBar img {
-  width: 60px;
-  height: 20px;
-  margin: 1px;
-  cursor: pointer;
+	width: 60px;
+	height: 22px;
+	object-fit: cover;
+	margin-right: 1px; /* Add a small margin between thumbnails */
 }
 
 .arrowButton {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  color: #000000; /* Change color as desired */
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	color: #000000; /* Change color as desired */
+	margin-top: 5px; /* Adjust the margin for better alignment with the thumbnails */
 }
+
 
 #prevButton {
 	position: absolute;
