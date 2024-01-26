@@ -12,79 +12,84 @@
 
   <script type="text/JavaScript">
     document.addEventListener("DOMContentLoaded", function () {
-  const imageDirectory = "./images";
-  const featuredImageContainer = document.getElementById("featuredImageContainer");
-  const featuredImage = document.getElementById("featuredImage");
-  const thumbnailBar = document.getElementById("thumbnailBar");
+      const imageDirectory = "./images";
+      const featuredImageContainer = document.getElementById("featuredImageContainer");
+      const featuredImage = document.getElementById("featuredImage");
+      const thumbnailBar = document.getElementById("thumbnailBar");
+      const captionLeftElement = document.getElementById("captionLeft"); // Added this line
 
-  const imageList = [
-    "4birchwoodland.jpg",
-    "5pathtobighouse.jpg",
-    "6lawnlake.jpg",
-    "7pathfield.jpg",
-    "8modernhome.jpg",
-    "9rusticgate.jpg",
-    "10waterfeature3andpath.jpg",
-    "11stonewall.jpg",
-    "12waterfeature4.jpg",
-    "13bluestoneentry.jpg",
-    "14 quietplacetosit.jpg",
-    "15relocatedgarage.jpg",
-    "16naturalisticlakeside.jpg",
-    "17understatedformalentry.jpg",
-    "18kitchenherbgarden.jpg",
-    "19moundedtopography.jpg",
-    "20antiquechinesegranite.jpg",
-    "21brickwall.jpg"
-  ];
+      const imageListWithCaptions = [
+        { image: "4birchwoodland.jpg", caption: "Birchwood Land" },
+        { image: "5pathtobighouse.jpg", caption: "Path to Big House" },
+        { image: "6lawnlake.jpg", caption: "Lawn by the Lake" },
+        { image: "7pathfield.jpg", caption: "Path in the Field" },
+        { image: "8modernhome.jpg", caption: "Modern Home" },
+        { image: "9rusticgate.jpg", caption: "Rustic Gate" },
+        { image: "10waterfeature3andpath.jpg", caption: "Water Feature and Path" },
+        { image: "11stonewall.jpg", caption: "Stone Wall" },
+        { image: "12waterfeature4.jpg", caption: "Water Feature 4" },
+        { image: "13bluestoneentry.jpg", caption: "Bluestone Entry" },
+        { image: "14 quietplacetosit.jpg", caption: "Quiet Place to Sit" },
+        { image: "15relocatedgarage.jpg", caption: "Relocated Garage" },
+        { image: "16naturalisticlakeside.jpg", caption: "Naturalistic Lakeside" },
+        { image: "17understatedformalentry.jpg", caption: "Understated Formal Entry" },
+        { image: "18kitchenherbgarden.jpg", caption: "Kitchen Herb Garden" },
+        { image: "19moundedtopography.jpg", caption: "Mounded Topography" },
+        { image: "20antiquechinesegranite.jpg", caption: "Antique Chinese Granite" },
+        { image: "21brickwall.jpg", caption: "Brick Wall" }
+];
 
-  const thumbnailsPerPage = 7;
-  let currentPage = 0;
+      const thumbnailsPerPage = 7;
+      let currentPage = 0;
 
-  function showThumbnails() {
-    const start = currentPage * thumbnailsPerPage;
-    const end = start + thumbnailsPerPage;
+      function showThumbnails() {
+        const start = currentPage * thumbnailsPerPage;
+        const end = start + thumbnailsPerPage;
 
-    thumbnailBar.innerHTML = ''; // Clear existing thumbnails
+        thumbnailBar.innerHTML = ''; // Clear existing thumbnails
 
-    // Display thumbnails for the current page
-    for (let i = start; i < end && i < imageList.length; i++) {
-      const imgElement = document.createElement("img");
-      imgElement.src = `${imageDirectory}/${imageList[i]}`;
-      imgElement.alt = imageList[i].replace(/\.[^/.]+$/, "");
-      imgElement.onclick = function () {
-        featuredImage.src = imgElement.src;
-      };
+        // Display thumbnails for the current page
+        for (let i = start; i < end && i < imageListWithCaptions.length; i++) {
+          const imgElement = document.createElement("img");
+          imgElement.src = `${imageDirectory}/${imageListWithCaptions[i].image}`;
+          imgElement.alt = imageListWithCaptions[i].image.replace(/\.[^/.]+$/, "");
+          imgElement.onclick = function () {
+            featuredImage.src = imgElement.src;
+            // Update the left caption when a thumbnail is clicked
+            captionLeftElement.textContent = imageListWithCaptions[i].caption;
+          };
 
-      thumbnailBar.appendChild(imgElement);
-    }
-  }
+          thumbnailBar.appendChild(imgElement);
+        }
+      }
 
-  // Set up initial thumbnails
-  showThumbnails();
-
-  // Set the first image as the featured image
-  featuredImage.src = `${imageDirectory}/${imageList[0]}`;
-
-  // Pagination buttons
-  const prevButton = document.getElementById("prevButton");
-  const nextButton = document.getElementById("nextButton");
-
-  prevButton.addEventListener("click", function () {
-    if (currentPage > 0) {
-      currentPage--;
+      // Set up initial thumbnails
       showThumbnails();
-    }
-  });
 
-  nextButton.addEventListener("click", function () {
-    const totalPages = Math.ceil(imageList.length / thumbnailsPerPage);
-    if (currentPage < totalPages - 1) {
-      currentPage++;
-      showThumbnails();
-    }
-  });
-});
+      // Set the first image as the featured image
+      featuredImage.src = `${imageDirectory}/${imageListWithCaptions[0].image}`;
+      // Set the caption for the first image
+      captionLeftElement.textContent = imageListWithCaptions[0].caption;
+
+      // Pagination buttons
+      const prevButton = document.getElementById("prevButton");
+      const nextButton = document.getElementById("nextButton");
+
+      prevButton.addEventListener("click", function () {
+        if (currentPage > 0) {
+          currentPage--;
+          showThumbnails();
+        }
+      });
+
+      nextButton.addEventListener("click", function () {
+        const totalPages = Math.ceil(imageListWithCaptions.length / thumbnailsPerPage);
+        if (currentPage < totalPages - 1) {
+          currentPage++;
+          showThumbnails();
+        }
+      });
+    });
 
 
   </script>
@@ -111,7 +116,7 @@
       <div id="featuredImageContainer">
         <!-- Featured Image -->
         <img id="featuredImage">
-        <p id="captionLeft">left caption</p>
+        <p id="captionLeft">Default Caption</p>
       </div>
 
       <!-- Thumbnail Bar -->
