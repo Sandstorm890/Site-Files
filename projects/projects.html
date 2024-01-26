@@ -16,10 +16,10 @@
       const featuredImageContainer = document.getElementById("featuredImageContainer");
       const featuredImage = document.getElementById("featuredImage");
       const thumbnailBar = document.getElementById("thumbnailBar");
-      const captionLeftElement = document.getElementById("captionLeft"); // Added this line
+      const captionLeftElement = document.getElementById("captionLeft");
 
       const imageListWithCaptions = [
-        { image: "4birchwoodland.jpg", caption: "Birchwood Land" },
+        { image: "4birchwoodland.jpg", caption: "Birch Woodland" },
         { image: "5pathtobighouse.jpg", caption: "Path to Big House" },
         { image: "6lawnlake.jpg", caption: "Lawn by the Lake" },
         { image: "7pathfield.jpg", caption: "Path in the Field" },
@@ -37,7 +37,7 @@
         { image: "19moundedtopography.jpg", caption: "Mounded Topography" },
         { image: "20antiquechinesegranite.jpg", caption: "Antique Chinese Granite" },
         { image: "21brickwall.jpg", caption: "Brick Wall" }
-];
+      ];
 
       const thumbnailsPerPage = 7;
       let currentPage = 0;
@@ -46,32 +46,28 @@
         const start = currentPage * thumbnailsPerPage;
         const end = start + thumbnailsPerPage;
 
-        thumbnailBar.innerHTML = ''; // Clear existing thumbnails
+        thumbnailBar.innerHTML = '';
 
-        // Display thumbnails for the current page
         for (let i = start; i < end && i < imageListWithCaptions.length; i++) {
           const imgElement = document.createElement("img");
           imgElement.src = `${imageDirectory}/${imageListWithCaptions[i].image}`;
           imgElement.alt = imageListWithCaptions[i].image.replace(/\.[^/.]+$/, "");
           imgElement.onclick = function () {
-            featuredImage.src = imgElement.src;
-            // Update the left caption when a thumbnail is clicked
-            captionLeftElement.textContent = imageListWithCaptions[i].caption;
+            updateFeaturedImage(i);
           };
 
           thumbnailBar.appendChild(imgElement);
         }
       }
 
-      // Set up initial thumbnails
+      function updateFeaturedImage(index) {
+        featuredImage.src = `${imageDirectory}/${imageListWithCaptions[index].image}`;
+        captionLeftElement.textContent = imageListWithCaptions[index].caption;
+      }
+
       showThumbnails();
+      updateFeaturedImage(0);
 
-      // Set the first image as the featured image
-      featuredImage.src = `${imageDirectory}/${imageListWithCaptions[0].image}`;
-      // Set the caption for the first image
-      captionLeftElement.textContent = imageListWithCaptions[0].caption;
-
-      // Pagination buttons
       const prevButton = document.getElementById("prevButton");
       const nextButton = document.getElementById("nextButton");
 
@@ -88,6 +84,14 @@
           currentPage++;
           showThumbnails();
         }
+      });
+
+      let currentIndex = 0
+
+      featuredImageContainer.addEventListener("click", function () {
+        const nextIndex = (currentIndex + 1)
+        currentIndex++
+        updateFeaturedImage(nextIndex);
       });
     });
 
