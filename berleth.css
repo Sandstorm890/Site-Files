@@ -17,15 +17,9 @@ body {
 	align-items: flex-start; /* Align content to the top */
 }
 
-#container {
-	max-width: 1200px; /* Set a maximum width for the container */
-	margin: 0 auto; /* Center the container */
-	float: left; /* Use flexbox to create a horizontal layout */
-	align-items: center; /* Center items vertically within the container */
-	justify-content: space-between; /* Add space between navigation and gallery */
-}
 
-#navigation {
+
+/* #navigation {
 	float: left;
 	width: 300px;
 	height: 400px;
@@ -53,9 +47,9 @@ body {
 #navigation {
 	width: 300px;
 	float: left;
-}
+} */
 
-#image_gallery {
+/* #image_gallery {
 	bottom: 0px;
 	visibility: visible;
 	height: 0px;
@@ -98,7 +92,7 @@ body {
 }
 #P7ShowPL12 img {
 	border: solid 1px #000000;
-}
+} */
 
 
 
@@ -147,7 +141,7 @@ body {
 	color: #959595;
 }
 /* philosopy page */
-
+/*
 #philosophy_info {
 	float: right;
 	width: 350px;
@@ -166,7 +160,7 @@ body {
 	font-size: 10px;
 	font-weight: bold;
 }
-#philosophy_info p{
+#contentContainer p{
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	line-height: 16px;
@@ -176,20 +170,20 @@ body {
 	padding-bottom: 15px;
 	padding-left: 0px;
 }
-#philosophy_info table {
+#contentContainer table {
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	line-height: 16px;
 	width: 320px;
 }
-/* h1 {
+h1 {
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 10px;
 	font-weight: bold;
 	color: #304E48;
 	margin: 0px;
 	padding: 0px;
-} */
+}
 #philosophy_info li {
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 11px;
@@ -237,6 +231,8 @@ body {
 	border: solid 1px #000000
 }
 
+*/
+
 /* drawings page */
 
 #drawings_info p{
@@ -244,6 +240,7 @@ body {
 	font-size: 11px;
 	line-height: 22px;
 }
+
 #drawings_info h1{
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 10px;
@@ -254,7 +251,7 @@ body {
 
 /* services page */
 
-#services_info {
+/* #services_info {
 	float: right;
 	width: 350px;
 	height: 455px;
@@ -283,6 +280,8 @@ body {
 	float: left;
 	margin-top: 0px;
 }
+
+*
 .alignrt {
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 11px;
@@ -324,7 +323,7 @@ body {
 	font-weight: bold;
 	font-family: Avenir, Verdana, Geneva, sans-serif;
 	height: 25px;
-}
+} */
 
 /* contact page */
 
@@ -409,7 +408,148 @@ html {
 	text-decoration: none;
 }
 
-/* new stuff */
+
+
+
+
+
+/* New Stuff */
+
+/* General Layout */
+
+h1 {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #000000;
+	margin: 0px;
+}	
+
+
+body {
+	display: flex;
+	justify-content: center; /* Center the content horizontally */
+	align-items: flex-start; /* Align content to the top */
+}
+
+#container {
+	width: 1000px;
+	margin: 0 auto; /* Center the container */
+	float: left; /* Use flexbox to create a horizontal layout */
+	align-items: center; /* Center items vertically within the container */
+	justify-content: space-between;
+}
+
+/* Navigation Bar */
+
+#navigation {
+	float: left;
+	width: 300px;
+	height: 400px;
+}
+#navigation li {
+	list-style-type: none;
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 55px;
+	margin-left: 8px;
+}
+#navigation a {
+	text-decoration: none;
+	color: #003300;
+}
+#navigation a:hover {
+	text-decoration: none;
+	color: #959595;
+}
+#navigation img {
+	margin-top: 45px;
+	margin-left: 45px;
+}
+
+/* Content Layout */
+
+#contentContainer {
+    float: right;
+    width: 450px;
+    height: 700px;
+    overflow: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 95px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 60px;
+
+    /* WebKit Scrollbar Styling */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: rgb(57, 68, 50) thin; /* For Firefox */
+}
+
+/* WebKit Scrollbar Styling */
+#contentContainer::-webkit-scrollbar {
+    width: 4px; /* Adjust the width of the scrollbar */
+}
+
+#contentContainer::-webkit-scrollbar-thumb {
+    background-color: rgb(34, 50, 34); /* Color of the thumb */
+}
+
+#contentContainer::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the track */
+}
+
+#contentContainer h1{
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #304E48;
+	margin: 0px;
+}
+
+.serviceName {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+	font-weight: 600;
+    color: #304E48;
+    float: left; /* Align to the left */
+    clear: left; /* Clear the float to ensure the next element starts on a new line */
+	
+}
+
+.servicePrice {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+	font-weight: 600;
+    color: #304E48;
+    float: right; /* Align to the right */
+    clear: right; /* Clear the float to ensure the next element starts on a new line */
+	margin-bottom: 10px;
+}
+
+
+
+#contentContainer p{
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+
+#contentContainer table {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	width: 320px;
+}
+
+/* Gallery */
 
 #galleryContainer {
 	display: flex;
@@ -417,6 +557,7 @@ html {
 	align-items: center;
 	padding-top: 100px;
 	padding-bottom: 50px;
+	padding-left: 103px;
 	height: 350px;
 	width: 500px;
 	position: relative; /* Set gallery container to relative position */
@@ -461,6 +602,7 @@ html {
 
 #prevButton {
 	position: absolute;
+	padding-left: 100px;
 	left: 0; /* Push the Previous button to the left */
 	bottom: 0;
 }
@@ -477,5 +619,7 @@ html {
 }
 
 #captionRight {
+	position: absolute;
+	text-align: right;
 }
 
