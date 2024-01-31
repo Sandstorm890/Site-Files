@@ -227,11 +227,15 @@ h1 {
 	color: #959595;
 	font-weight: bold;
 }
+
 #philosophy_image img {
-	border: solid 1px #000000
+	border: solid 1px #000000;
+	width: 450px;
+	height: auto;
 }
 
 */
+
 
 /* drawings page */
 
@@ -327,7 +331,7 @@ h1 {
 
 /* contact page */
 
-#contact_info {
+/* #contact_info {
 	float: right;
 	width: 350px;
 	height: 455px;
@@ -351,7 +355,7 @@ h1 {
 	font-weight: bold;
 	color: #304E48;
 	margin-bottom: -10px;
-}
+} 
 #contact_image img {
 	border: solid 1px #000000
 }
@@ -408,6 +412,7 @@ html {
 	text-decoration: none;
 }
 
+*/
 
 
 
@@ -433,7 +438,7 @@ body {
 }
 
 #container {
-	width: 1000px;
+	width: 1800px;
 	margin: 0 auto; /* Center the container */
 	float: left; /* Use flexbox to create a horizontal layout */
 	align-items: center; /* Center items vertically within the container */
@@ -444,14 +449,14 @@ body {
 
 #navigation {
 	float: left;
-	width: 300px;
-	height: 400px;
+	width: 600px;
+	height: 800px;
 }
 #navigation li {
 	list-style-type: none;
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	line-height: 55px;
+	font-size: 28px;
+	line-height: 110px;
 	margin-left: 8px;
 }
 #navigation a {
@@ -465,14 +470,22 @@ body {
 #navigation img {
 	margin-top: 45px;
 	margin-left: 45px;
+	width: 440;
+	height: 44;
+}
+
+#navigation-image img{
+	border: solid 1px #000000;
+	width: 450px;
+	height: auto;
 }
 
 /* Content Layout */
 
 #contentContainer {
     float: right;
-    width: 450px;
-    height: 700px;
+    width: 900px;
+    height: 1400px;
     overflow: auto;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -503,7 +516,7 @@ body {
 
 #contentContainer h1{
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 28px;
 	font-weight: bolder;
 	color: #304E48;
 	margin: 0px;
@@ -511,8 +524,9 @@ body {
 
 .serviceName {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 24px;
 	font-weight: 600;
+	line-height: 40px;
     color: #304E48;
     float: left; /* Align to the left */
     clear: left; /* Clear the float to ensure the next element starts on a new line */
@@ -521,8 +535,9 @@ body {
 
 .servicePrice {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-	font-weight: 600;
+    font-size: 24px;
+	font-weight: 500;
+	line-height: 40px;
     color: #304E48;
     float: right; /* Align to the right */
     clear: right; /* Clear the float to ensure the next element starts on a new line */
@@ -533,8 +548,8 @@ body {
 
 #contentContainer p{
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
+	font-size: 26px;
+	line-height: 38px;
 	margin: 0px;
 	padding-top: 5px;
 	padding-right: 0px;
@@ -544,9 +559,10 @@ body {
 
 #contentContainer table {
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	line-height: 16px;
-	width: 320px;
+	font-size: 24px;
+	line-height: 36px;
+	width: 640px;
+	height: 400px;
 }
 
 /* Gallery */
@@ -554,23 +570,22 @@ body {
 #galleryContainer {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items:start
 	padding-top: 100px;
 	padding-bottom: 50px;
-	padding-left: 103px;
-	height: 350px;
-	width: 500px;
-	position: relative; /* Set gallery container to relative position */
+	height: 700px;
+	width: 1000px;
+	position: relative;
 }
 
 #featuredImageContainer {
-	max-width: 500px;
-	height: 300px; /* Set a maximum height, adjust as needed */
+	max-width: 100px;
+	height: 600px; /* Set a maximum height, adjust as needed */
 	border: 1px solid #333;
 }
 
 #featuredImage {
-	max-width: 500px;
+	max-width: 1000px;
 	height: 100%;
 }
 
@@ -579,13 +594,14 @@ body {
 	overflow-x: auto;
 	position: absolute;
 	bottom: 0;
+	align-self: center;
 	
 	transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
   }
 
 #thumbnailBar img {
-	width: 60px;
-	height: 22px;
+	width: 120px;
+	height: 44px;
 	object-fit: cover;
 	margin-right: 1px; /* Add a small margin between thumbnails */
 }
@@ -594,7 +610,7 @@ body {
 	background: none;
 	border: none;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 28px;
 	color: #000000; /* Change color as desired */
 	margin-top: 5px; /* Adjust the margin for better alignment with the thumbnails */
 }
@@ -602,7 +618,7 @@ body {
 
 #prevButton {
 	position: absolute;
-	padding-left: 100px;
+
 	left: 0; /* Push the Previous button to the left */
 	bottom: 0;
 }
