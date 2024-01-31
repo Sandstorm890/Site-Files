@@ -570,7 +570,7 @@ body {
 #galleryContainer {
 	display: flex;
 	flex-direction: column;
-	align-items:start
+	align-items:start;
 	padding-top: 100px;
 	padding-bottom: 50px;
 	height: 700px;
