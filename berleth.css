@@ -456,7 +456,7 @@ body {
 }
 #navigation a {
 	text-decoration: none;
-	color: #003300;
+	color: #000000;
 }
 #navigation a:hover {
 	text-decoration: none;
@@ -472,7 +472,7 @@ body {
 #contentContainer {
     float: right;
     width: 450px;
-    height: 700px;
+    height: 620px;
     overflow: auto;
     margin-right: 20px;
     margin-bottom: 20px;
