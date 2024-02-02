@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Avenir');
 /* CSS Document */
 
-h1 {
+/* h1 {
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: lighter;
@@ -13,13 +13,11 @@ h1 {
 
 body {
 	display: flex;
-	justify-content: center; /* Center the content horizontally */
-	align-items: flex-start; /* Align content to the top */
-}
+	justify-content: center; 
+} 
 
 
-
-/* #navigation {
+#navigation {
 	float: left;
 	width: 300px;
 	height: 400px;
@@ -47,9 +45,9 @@ body {
 #navigation {
 	width: 300px;
 	float: left;
-} */
+}
 
-/* #image_gallery {
+#image_gallery {
 	bottom: 0px;
 	visibility: visible;
 	height: 0px;
@@ -235,7 +233,7 @@ h1 {
 
 /* drawings page */
 
-#drawings_info p{
+/* #drawings_info p{
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 11px;
 	line-height: 22px;
@@ -247,7 +245,7 @@ h1 {
 	font-weight: bold;
 	color: #304E48;
 	margin-bottom: -10px;
-}
+} */
 
 /* services page */
 
@@ -423,8 +421,14 @@ h1 {
 	font-weight: lighter;
 	color: #000000;
 	margin: 0px;
-}	
+}
 
+p {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #000000;
+}
 
 body {
 	display: flex;
@@ -433,7 +437,7 @@ body {
 }
 
 #container {
-	width: 1000px;
+	width: 1200px;
 	margin: 0 auto; /* Center the container */
 	float: left; /* Use flexbox to create a horizontal layout */
 	align-items: center; /* Center items vertically within the container */
@@ -551,37 +555,48 @@ body {
 
 /* Gallery */
 
-#galleryContainer {
-	display: flex;
-	flex-direction: column;
+.gallery-container {
+	display: grid;
 	align-items: center;
-	padding-top: 100px;
+  	justify-content: center;
+	padding-top: 80px;
 	padding-bottom: 50px;
-	padding-left: 103px;
 	height: 350px;
-	width: 500px;
-	position: relative; /* Set gallery container to relative position */
+	width: 780px;
 }
 
 #featuredImageContainer {
-	max-width: 500px;
-	height: 300px; /* Set a maximum height, adjust as needed */
+	
+	max-width: auto;
+	height: 300px;
 	border: 1px solid #333;
 }
 
 #featuredImage {
-	max-width: 500px;
+	width: 100%;
 	height: 100%;
+}
+
+#featured-image-footer {
+	width: auto;
+	height: 40px;
+}
+
+#thumbnail-container {
+	display: flex;
+	justify-content: end;
+	padding-right: 118px;
+	width: auto;
+	height: 22px;
+
 }
 
 #thumbnailBar {
 	display: flex;
 	overflow-x: auto;
-	position: absolute;
-	bottom: 0;
-	
+	align-content: center;
 	transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
-  }
+}
 
 #thumbnailBar img {
 	width: 60px;
@@ -590,36 +605,37 @@ body {
 	margin-right: 1px; /* Add a small margin between thumbnails */
 }
 
-.arrowButton {
+/* .arrowButton {
 	background: none;
 	border: none;
 	cursor: pointer;
 	font-size: 16px;
-	color: #000000; /* Change color as desired */
-	margin-top: 5px; /* Adjust the margin for better alignment with the thumbnails */
-}
+	color: #000000; 
+	margin-top: 5px;
+} */
 
 
-#prevButton {
+/* #prevButton {
 	position: absolute;
-	padding-left: 100px;
-	left: 0; /* Push the Previous button to the left */
-	bottom: 0;
+	left: 0;
+	
 }
 
 #nextButton {
 	position: absolute;
 	right: 0;
-	bottom: 0;
-}
+	
+} */
 
-#captionLeft {
-	position: absolute;
-	text-align: left;
-}
-
-#captionRight {
+/* #captionLeft {
 	position: absolute;
 	text-align: right;
+} */
+
+#caption-right {
+	display: flex;
+	/* bottom: 0; */
+	justify-content: end;
+	/* align-items: end; */
 }
 

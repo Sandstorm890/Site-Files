@@ -16,10 +16,12 @@
       const featuredImageContainer = document.getElementById("featuredImageContainer");
       const featuredImage = document.getElementById("featuredImage");
       const thumbnailBar = document.getElementById("thumbnailBar");
-      const captionLeftElement = document.getElementById("captionLeft");
+      const captionRightElement = document.getElementById("caption-right");
+
+      let currentIndex = 0
 
       const imageListWithCaptions = [
-        { image: "4birchwoodland.jpg", caption: "Birch Woodland" },
+        { image: "4birchwoodland.jpg", caption: "Birchwood Land" },
         { image: "5pathtobighouse.jpg", caption: "Path to Big House" },
         { image: "6lawnlake.jpg", caption: "Lawn by the Lake" },
         { image: "7pathfield.jpg", caption: "Path in the Field" },
@@ -27,7 +29,7 @@
         { image: "9rusticgate.jpg", caption: "Rustic Gate" },
         { image: "10waterfeature3andpath.jpg", caption: "Water Feature and Path" },
         { image: "11stonewall.jpg", caption: "Stone Wall" },
-        { image: "12waterfeature4.jpg", caption: "Water Feature 4" },
+        { image: "12waterfeature4.jpg", caption: "Water Feature" },
         { image: "13bluestoneentry.jpg", caption: "Bluestone Entry" },
         { image: "14 quietplacetosit.jpg", caption: "Quiet Place to Sit" },
         { image: "15relocatedgarage.jpg", caption: "Relocated Garage" },
@@ -39,7 +41,7 @@
         { image: "21brickwall.jpg", caption: "Brick Wall" }
       ];
 
-      const thumbnailsPerPage = 7;
+      const thumbnailsPerPage = 17;
       let currentPage = 0;
 
       function showThumbnails() {
@@ -53,6 +55,7 @@
           imgElement.src = `${imageDirectory}/${imageListWithCaptions[i].image}`;
           imgElement.alt = imageListWithCaptions[i].image.replace(/\.[^/.]+$/, "");
           imgElement.onclick = function () {
+            currentIndex = i
             updateFeaturedImage(i);
           };
 
@@ -62,7 +65,7 @@
 
       function updateFeaturedImage(index) {
         featuredImage.src = `${imageDirectory}/${imageListWithCaptions[index].image}`;
-        captionLeftElement.textContent = imageListWithCaptions[index].caption;
+        captionRightElement.textContent = imageListWithCaptions[index].caption;
       }
 
       showThumbnails();
@@ -71,23 +74,21 @@
       const prevButton = document.getElementById("prevButton");
       const nextButton = document.getElementById("nextButton");
 
-      prevButton.addEventListener("click", function () {
-        if (currentPage > 0) {
-          currentPage--;
-          showThumbnails();
-        }
-      });
+      // prevButton.addEventListener("click", function () {
+      //   if (currentPage > 0) {
+      //     currentPage--;
+      //     showThumbnails();
+      //   }
+      // });
 
-      nextButton.addEventListener("click", function () {
-        const totalPages = Math.ceil(imageListWithCaptions.length / thumbnailsPerPage);
-        if (currentPage < totalPages - 1) {
-          currentPage++;
-          showThumbnails();
-        }
-      });
-
-      let currentIndex = 0
-
+      // nextButton.addEventListener("click", function () {
+      //   const totalPages = Math.ceil(imageListWithCaptions.length / thumbnailsPerPage);
+      //   if (currentPage < totalPages - 1) {
+      //     currentPage++;
+      //     showThumbnails();
+      //   }
+      // });
+      
       featuredImageContainer.addEventListener("click", function () {
         const nextIndex = (currentIndex + 1)
         currentIndex++
@@ -114,21 +115,34 @@
       </ul>
     </div>
 
-    <!-- Gallery Container -->
-    <div id="galleryContainer">
-      <!-- Featured Image Container -->
+    
+    <div class="gallery-container">
+      
       <div id="featuredImageContainer">
-        <!-- Featured Image -->
+        
         <img id="featuredImage">
-        <p id="captionLeft">Default Caption</p>
+
       </div>
+      
+      <div id="featured-image-footer">
 
-      <!-- Thumbnail Bar -->
-      <div id="thumbnailBar"></div>
-
-      <button id="prevButton" class="arrowButton">&lt;</button>
-      <button id="nextButton" class="arrowButton">&gt;</button>
+        <p id="caption-right" alt="Description of Photo"></p>
+        
+      </div>
+      
+      
     </div>
+    
+    
+    <div id="thumbnail-container">
+
+      <div id="thumbnailBar"></div>
+      
+      <!-- <button id="prevButton" class="arrowButton">&lt;</button>
+      <button id="nextButton" class="arrowButton">&gt;</button> -->
+
+    </div>
+    
   </div>
 </body>
 
