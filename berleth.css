@@ -8,13 +8,13 @@
 	font-weight: lighter;
 	color: #304E48;
 	margin: 0px;
-}	
+}
 
 
 body {
 	display: flex;
-	justify-content: center; 
-} 
+	justify-content: center;
+}
 
 
 #navigation {
@@ -384,7 +384,7 @@ html {
 	margin-top: 400px;
 	text-align: center;
 	clear: both;
-	float: left;	
+	float: left;
 }
 .rtarrow {
 	margin-top: 519px;
@@ -474,22 +474,15 @@ body {
 /* Content Layout */
 
 #contentContainer {
-    float: right;
-    width: 450px;
-    height: 620px;
+	float: right;
+    width: 650px;
+    height: 633px;
     overflow: auto;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 95px;
-    padding-top: 0px;
     padding-right: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
     margin-top: 60px;
-
-    /* WebKit Scrollbar Styling */
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: rgb(57, 68, 50) thin; /* For Firefox */
+	margin-right: 60px;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(57, 68, 50) thin;
 }
 
 /* WebKit Scrollbar Styling */
@@ -520,7 +513,7 @@ body {
     color: #304E48;
     float: left; /* Align to the left */
     clear: left; /* Clear the float to ensure the next element starts on a new line */
-	
+
 }
 
 .servicePrice {
@@ -559,17 +552,17 @@ body {
 	display: grid;
 	align-items: center;
   	justify-content: center;
-	padding-top: 80px;
+	padding-top: 100px;
 	padding-bottom: 50px;
 	height: 350px;
 	width: 780px;
 }
 
 #featuredImageContainer {
-	
+	box-shadow: 0px, 0px, 50px, #ff5757;
 	max-width: auto;
-	height: 300px;
-	border: 1px solid #333;
+	height: 350px;
+	/* border: 1px solid #333; */
 }
 
 #featuredImage {
@@ -584,11 +577,10 @@ body {
 
 #thumbnail-container {
 	display: flex;
-	justify-content: end;
-	padding-right: 118px;
+	justify-content: center;
 	width: auto;
 	height: 22px;
-
+	padding-top: 60px;
 }
 
 #thumbnailBar {
@@ -610,7 +602,7 @@ body {
 	border: none;
 	cursor: pointer;
 	font-size: 16px;
-	color: #000000; 
+	color: #000000;
 	margin-top: 5px;
 } */
 
@@ -618,13 +610,13 @@ body {
 /* #prevButton {
 	position: absolute;
 	left: 0;
-	
+
 }
 
 #nextButton {
 	position: absolute;
 	right: 0;
-	
+
 } */
 
 /* #captionLeft {
@@ -633,9 +625,10 @@ body {
 } */
 
 #caption-right {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
 	display: flex;
-	/* bottom: 0; */
 	justify-content: end;
-	/* align-items: end; */
+	font-size: 11px;
+	text-shadow: 20px, red;
 }
 
