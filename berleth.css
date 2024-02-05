@@ -1,6 +1,267 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Avenir');
-/* CSS Document */
+
+
+/* General Layout */
+
+h1 {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #000000;
+	margin: 0px;
+}
+
+p {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #000000;
+}
+
+body {
+	background-color: rgb(255, 255, 251);
+	/* scale: 1.2; */
+	/* padding-top: 50px; */
+	display: flex;
+	justify-content: center;
+	/* align-items: flex-start; */
+}
+
+#container {
+	width: 1200px;
+	/* height: 1000px; */
+	/* margin: 0 auto; */
+	/* float: left; */
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Navigation Bar */
+
+#navigation {
+	float: left;
+	width: 300px;
+	height: 400px;
+}
+#navigation li {
+	list-style-type: none;
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 55px;
+	margin-left: 8px;
+	text-shadow: 0px 0px 8px  rgba(0, 0, 0, 0.08);
+}
+#navigation a {
+	text-decoration: none;
+	color: #000000;
+}
+#navigation a:hover {
+	text-decoration: none;
+	color: #959595;
+}
+#navigation img {
+	margin-top: 45px;
+	margin-left: 45px;
+	box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.2);
+}
+
+/* Content Layout */
+
+#contentContainer {
+	float: right;
+    width: 650px;
+    height: 633px;
+    overflow: auto;
+    padding-right: 10px;
+    margin-top: 60px;
+	margin-right: 60px;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(57, 68, 50) thin;
+}
+
+/* WebKit Scrollbar Styling */
+#contentContainer::-webkit-scrollbar {
+    width: 4px; /* Adjust the width of the scrollbar */
+}
+
+#contentContainer::-webkit-scrollbar-thumb {
+    background-color: rgb(34, 50, 34); /* Color of the thumb */
+}
+
+#contentContainer::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the track */
+}
+
+#contentContainer h1{
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bolder;
+	color: #304E48;
+	margin: 0px;
+}
+
+.serviceName {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+	font-weight: 600;
+    color: #304E48;
+    float: left; /* Align to the left */
+    clear: left; /* Clear the float to ensure the next element starts on a new line */
+
+}
+
+.servicePrice {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+	font-weight: 600;
+    color: #304E48;
+    float: right; /* Align to the right */
+    clear: right; /* Clear the float to ensure the next element starts on a new line */
+	margin-bottom: 10px;
+}
+
+
+
+#contentContainer p{
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+
+#contentContainer table {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	width: 320px;
+}
+
+#contact-container {
+	height: 650px;
+	display: grid;
+	align-items: center;
+	justify-content: end;
+	padding: 5%;
+	
+}
+
+#contact-container p {
+	text-align: right;
+	line-height: 22px;
+}
+
+#contact-image-container {
+	display: flex;
+	justify-self: flex-end;
+	align-items: end;
+	height: 145px;
+	width: auto;
+}
+
+/* Gallery */
+
+.gallery-container {
+	display: grid;
+	/* align-items: center; */
+  	justify-content: flex-end;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	height: 350px;
+	width: 780px;
+
+}
+
+#featuredImageContainer {
+	max-width: auto;
+	height: 320px;
+}
+
+#featuredImage {
+	float: right;
+	width: auto;
+	height: 320px;
+	box-shadow: 0px 6px 24px  rgba(0, 0, 0, 0.486);
+}
+
+#featured-image-footer {
+	width: auto;
+	height: 40px;
+}
+
+#caption-right {
+	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: end;
+	font-size: 11px;
+	padding-top: 8px;
+}
+
+#thumbnail-container {
+	display: flex;
+	justify-content: flex-end;
+	width: auto;
+	height: 22px;
+	padding-top: 40px;
+}
+
+#thumbnailBar {
+	display: flex;
+	overflow-x: auto;
+	align-content: center;
+	transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
+	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.486);
+}
+
+#thumbnailBar img {
+	width: 60px;
+	height: 22px;
+	object-fit: cover;
+	margin-right: 1px; /* Add a small margin between thumbnails */
+
+}
+
+/* .arrowButton {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	color: #000000;
+	margin-top: 5px;
+} */
+
+
+/* #prevButton {
+	position: absolute;
+	left: 0;
+
+}
+
+#nextButton {
+	position: absolute;
+	right: 0;
+
+} */
+
+/* #captionLeft {
+	position: absolute;
+	text-align: right;
+} */
+
+
+
+
+
+
+
+
+
+
+
 
 /* h1 {
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
@@ -411,249 +672,6 @@ html {
 
 
 
-/* New Stuff */
-
-/* General Layout */
-
-h1 {
-	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: lighter;
-	color: #000000;
-	margin: 0px;
-}
-
-p {
-	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: lighter;
-	color: #000000;
-}
-
-body {
-	background-color: rgb(255, 255, 251);
-	display: flex;
-	justify-content: center; /* Center the content horizontally */
-	align-items: flex-start; /* Align content to the top */
-}
-
-#container {
-	width: 1200px;
-	margin: 0 auto; /* Center the container */
-	float: left; /* Use flexbox to create a horizontal layout */
-	align-items: center; /* Center items vertically within the container */
-	justify-content: space-between;
-}
-
-/* Navigation Bar */
-
-#navigation {
-	float: left;
-	width: 300px;
-	height: 400px;
-}
-#navigation li {
-	list-style-type: none;
-	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	line-height: 55px;
-	margin-left: 8px;
-}
-#navigation a {
-	text-decoration: none;
-	color: #000000;
-}
-#navigation a:hover {
-	text-decoration: none;
-	color: #959595;
-}
-#navigation img {
-	margin-top: 45px;
-	margin-left: 45px;
-}
-
-/* Content Layout */
-
-#contentContainer {
-	float: right;
-    width: 650px;
-    height: 633px;
-    overflow: auto;
-    padding-right: 10px;
-    margin-top: 60px;
-	margin-right: 60px;
-    scrollbar-width: thin;
-    scrollbar-color: rgb(57, 68, 50) thin;
-}
-
-/* WebKit Scrollbar Styling */
-#contentContainer::-webkit-scrollbar {
-    width: 4px; /* Adjust the width of the scrollbar */
-}
-
-#contentContainer::-webkit-scrollbar-thumb {
-    background-color: rgb(34, 50, 34); /* Color of the thumb */
-}
-
-#contentContainer::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Color of the track */
-}
-
-#contentContainer h1{
-	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: bolder;
-	color: #304E48;
-	margin: 0px;
-}
-
-.serviceName {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-	font-weight: 600;
-    color: #304E48;
-    float: left; /* Align to the left */
-    clear: left; /* Clear the float to ensure the next element starts on a new line */
-
-}
-
-.servicePrice {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 12px;
-	font-weight: 600;
-    color: #304E48;
-    float: right; /* Align to the right */
-    clear: right; /* Clear the float to ensure the next element starts on a new line */
-	margin-bottom: 10px;
-}
 
 
-
-#contentContainer p{
-	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
-	margin: 0px;
-	padding-top: 5px;
-	padding-right: 0px;
-	padding-bottom: 15px;
-	padding-left: 0px;
-}
-
-#contentContainer table {
-	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	line-height: 16px;
-	width: 320px;
-}
-
-#contact-container {
-	height: 650px;
-	display: grid;
-	align-items: center;
-	justify-content: end;
-	padding: 5%;
-	
-}
-
-#contact-container p {
-	text-align: right;
-	line-height: 22px;
-}
-
-#contact-image-container {
-	display: flex;
-	justify-self: flex-end;
-	align-items: end;
-	height: 145px;
-	width: auto;
-}
-
-/* Gallery */
-
-.gallery-container {
-	display: grid;
-	/* align-items: center; */
-  	justify-content: flex-end;
-	padding-top: 100px;
-	padding-bottom: 20px;
-	height: 350px;
-	width: 780px;
-}
-
-#featuredImageContainer {
-	/* box-shadow: 0px, 0px, 50px, #ff5757; */
-	max-width: auto;
-	/* float: right; */
-	height: 320px;
-	/* border: 1px solid #333; */
-}
-
-#featuredImage {
-	float: right;
-	width: auto;
-	height: 320px;
-}
-
-#featured-image-footer {
-	width: auto;
-	height: 40px;
-}
-
-#thumbnail-container {
-	display: flex;
-	justify-content: flex-end;
-	width: auto;
-	height: 22px;
-	padding-top: 40px;
-}
-
-#thumbnailBar {
-	display: flex;
-	overflow-x: auto;
-	align-content: center;
-	transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
-}
-
-#thumbnailBar img {
-	width: 60px;
-	height: 22px;
-	object-fit: cover;
-	margin-right: 1px; /* Add a small margin between thumbnails */
-}
-
-/* .arrowButton {
-	background: none;
-	border: none;
-	cursor: pointer;
-	font-size: 16px;
-	color: #000000;
-	margin-top: 5px;
-} */
-
-
-/* #prevButton {
-	position: absolute;
-	left: 0;
-
-}
-
-#nextButton {
-	position: absolute;
-	right: 0;
-
-} */
-
-/* #captionLeft {
-	position: absolute;
-	text-align: right;
-} */
-
-#caption-right {
-	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
-	display: flex;
-	justify-content: end;
-	font-size: 11px;
-	text-shadow: 20px, red;
-}
 
