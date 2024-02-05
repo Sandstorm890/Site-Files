@@ -357,7 +357,7 @@ body {
 
 /* profile page */
 
-#profile_info {
+/* #profile_info {
 	float: right;
 	width: 350px;
 	height: 455px;
@@ -398,7 +398,7 @@ body {
 	font-size: 10px;
 	font-weight: bold;
 	color: #959595;
-}
+} */
 /* philosopy page */
 /*
 #philosophy_info {
@@ -586,18 +586,18 @@ h1 {
 
 /* contact page */
 
-#contact_info {
+/* #contact_info {
 	float: right;
 	width: 350px;
 	height: 455px;
-	/* margin-right: 20px;
+	margin-right: 20px;
 	margin-bottom: 20px;
 	margin-left: 20px;
 	padding-top: 0px;
 	padding-right: 10px;
 	padding-bottom: 10px;
 	padding-left: 10px;
-	margin-top: 78px; */
+	margin-top: 78px;
 }
 #contact_info p{
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
@@ -665,7 +665,7 @@ html {
 .ltarrow a {
 	color: #000;
 	text-decoration: none;
-}
+} */
 
 
 
