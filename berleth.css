@@ -218,17 +218,19 @@ body {
 #thumbnail-container {
 	display: flex;
 	justify-content: flex-end;
-	width: auto;
-	height: 22px;
+	width: 700px;
+	height: 30px;
 	padding-top: 40px;
+	overflow-x: hidden;
 }
+
 
 #thumbnailBar {
 	display: flex;
-	overflow-x: auto;
 	align-content: center;
-	transition: transform 0.3s ease; /* Add a smooth transition for the transform property */
-	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.486);
+	align-items: center;
+	/* box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.486); */
+	
 }
 
 #thumbnailBar img {
@@ -238,6 +240,10 @@ body {
 	margin-right: 1px; /* Add a small margin between thumbnails */
 
 }
+
+/* #featured-thumb {
+	scale: 1.5;
+} */
 
 /* .arrowButton {
 	background: none;
