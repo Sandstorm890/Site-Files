@@ -178,7 +178,6 @@ body {
 
 .gallery-container {
 	display: grid;
-	/* align-items: center; */
   	justify-content: flex-end;
 	padding-top: 100px;
 	padding-bottom: 20px;
@@ -196,7 +195,7 @@ body {
 	float: right;
 	width: auto;
 	height: 320px;
-	box-shadow: 0px 6px 24px  rgba(0, 0, 0, 0.486);
+	box-shadow: 0px 6px 24px  rgba(0, 0, 0, 0.401);
 	animation: fadeInAnimation ease 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -240,6 +239,16 @@ body {
 	margin-right: 1px; /* Add a small margin between thumbnails */
 
 }
+
+/* special */
+
+#ironwood-btn {
+	
+}
+
+
+
+
 
 /* #featured-thumb {
 	scale: 1.5;
