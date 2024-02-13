@@ -46,24 +46,6 @@ body {
 	}
 }
 
-@media (max-width: 1230px) {
-	#featuredImageContainer {
-		margin-right: 2%;
-	}
-	#thumbnailBar {
-		margin-right: 2%;
-	}
-
-	#caption-right {
-		margin-right: 2%;
-	}
-}
-
-
-
-
-
-
 #container {
 	width: 1200px;
 	
