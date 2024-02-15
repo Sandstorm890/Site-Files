@@ -14,6 +14,17 @@
     }
 }
 
+@keyframes backgroundFadeIn {
+	
+	0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 45%;
+    }
+}
+
+
 h1 {
 	font-family: Avenir, Verdana, Arial, Helvetica, sans-serif;
 	font-size: 14px;
@@ -36,7 +47,44 @@ body {
 	display: flex;
 	justify-content: center;
 	
+	
 	/* align-items: flex-start; */
+}
+
+#background-container {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	z-index: -1;
+	overflow: hidden;
+}
+
+#background {
+	pointer-events: none;
+	position: absolute;
+	float: right;
+	opacity: 45%;
+	width: auto;
+	height: 150%;
+	padding-left: 2%;
+	/* padding-top: 5%; */
+	z-index: -1;
+	animation: backgroundFadeIn ease 8s;
+
+}
+
+#background-secondary {
+	pointer-events: none;
+	position: absolute;
+	float: left;
+	opacity: 45%;
+	width: auto;
+	scale: 1.4;
+	/* padding-right: 1000px; */
+	/* padding-top: 5%; */
+	z-index: -1;
+	animation: backgroundFadeIn ease 4s;
+
 }
   
 
@@ -44,12 +92,16 @@ body {
 	.container {
 		transform: scale(1.3);
 	}
+
+	#background {
+		padding-left: 25%;
+	}
 }
 
 #container {
 	width: 1200px;
 	
-	/* height: 1000px; */
+	/* height: 700px; */
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 3%;
