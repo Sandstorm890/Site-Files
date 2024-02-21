@@ -61,12 +61,19 @@ document.addEventListener("DOMContentLoaded", function () {
     showThumbnails()
   };
 
-  function updateDropShadow() {
-    if (dropshadowIndex == 4) {
+  function updateDropShadow(direction) {
+    if (direction == 'up' && dropshadowIndex == 4) {
       dropshadowIndex = 0
-    } else {
+    } else if (direction == 'up') {
       dropshadowIndex++
     }
+
+    if (direction == 'down' && dropshadowIndex == 0) {
+      dropshadowIndex = 4
+    } else if (direction == 'down') {
+      dropshadowIndex--
+    }
+
     console.log(dropshadowIndex)
     switch (dropshadowIndex) {
       case 0:
@@ -99,9 +106,11 @@ document.addEventListener("DOMContentLoaded", function () {
       } else if (event.key === 'ArrowLeft') {
         featuredImageBack()
       } else if (event.key === "ArrowUp") {
-        updateDropShadow()
-
+        updateDropShadow("up")
+      } else if (event.key === "ArrowDown") {
+        updateDropShadow("down")
       }
+      
     
   });
   
