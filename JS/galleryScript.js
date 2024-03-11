@@ -77,12 +77,12 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(dropshadowIndex)
     switch (dropshadowIndex) {
       case 0:
-      featuredImage.style.boxShadow = "0px 6px 24px  rgba(0, 0, 0, 0.401)"
-      captionRightElement.textContent = "Original"
+      featuredImage.style.boxShadow = "6px 6px 24px  rgba(0, 0, 0, 0.401)"
+      captionRightElement.textContent = "New"
       break;
       case 1:
-        featuredImage.style.boxShadow = "6px 6px 24px  rgba(0, 0, 0, 0.401)"
-        captionRightElement.textContent = "1"
+        featuredImage.style.boxShadow = "0px 6px 24px  rgba(0, 0, 0, 0.401)"
+        captionRightElement.textContent = "Original"
       break;
       case 2:
         featuredImage.style.boxShadow = "6px 6px 12px  rgba(0, 0, 0, 0.401)"
