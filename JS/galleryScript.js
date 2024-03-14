@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const ironwoodBtn = document.getElementById("ironwood-btn")
 
   let featuredPhotoIndex = 0;
-  let dropshadowIndex = 0;
+  // let dropshadowIndex = 0;
   
   function showThumbnails() {
 
@@ -75,28 +75,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     console.log(dropshadowIndex)
-    switch (dropshadowIndex) {
-      case 0:
-      featuredImage.style.boxShadow = "6px 6px 24px  rgba(0, 0, 0, 0.401)"
-      captionRightElement.textContent = "New"
-      break;
-      case 1:
-        featuredImage.style.boxShadow = "0px 6px 24px  rgba(0, 0, 0, 0.401)"
-        captionRightElement.textContent = "Original"
-      break;
-      case 2:
-        featuredImage.style.boxShadow = "6px 6px 12px  rgba(0, 0, 0, 0.401)"
-        captionRightElement.textContent = "2"
-      break;
-      case 3:
-        featuredImage.style.boxShadow = "6px 6px 8px  rgba(0, 0, 0, 0.401)"
-        captionRightElement.textContent = "3"
-      break;
-      case 4:
-        featuredImage.style.boxShadow = "6px 6px 4px  rgba(0, 0, 0, 0.401)"
-        captionRightElement.textContent = "4"
-      break;
-    }
+    // switch (dropshadowIndex) {
+    //   case 0:
+    //   featuredImage.style.boxShadow = "6px 6px 24px  rgba(0, 0, 0, 0.401)"
+    //   captionRightElement.textContent = "New"
+    //   break;
+    //   case 1:
+    //     featuredImage.style.boxShadow = "0px 6px 24px  rgba(0, 0, 0, 0.401)"
+    //     captionRightElement.textContent = "Original"
+    //   break;
+    //   case 2:
+    //     featuredImage.style.boxShadow = "6px 6px 12px  rgba(0, 0, 0, 0.401)"
+    //     captionRightElement.textContent = "2"
+    //   break;
+    //   case 3:
+    //     featuredImage.style.boxShadow = "6px 6px 8px  rgba(0, 0, 0, 0.401)"
+    //     captionRightElement.textContent = "3"
+    //   break;
+    //   case 4:
+    //     featuredImage.style.boxShadow = "6px 6px 4px  rgba(0, 0, 0, 0.401)"
+    //     captionRightElement.textContent = "4"
+    //   break;
+    // }
   }
 
   document.addEventListener('keydown', function(event) {
@@ -105,11 +105,13 @@ document.addEventListener("DOMContentLoaded", function () {
         featuredImageForward()
       } else if (event.key === 'ArrowLeft') {
         featuredImageBack()
-      } else if (event.key === "ArrowUp") {
-        updateDropShadow("up")
-      } else if (event.key === "ArrowDown") {
-        updateDropShadow("down")
-      }
+      } 
+      
+      // else if (event.key === "ArrowUp") {
+      //   updateDropShadow("up")
+      // } else if (event.key === "ArrowDown") {
+      //   updateDropShadow("down")
+      // }
       
     
   });
